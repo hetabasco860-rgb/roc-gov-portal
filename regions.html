@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>兩地區服務｜中華名國國民政府官方資訊網</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <header class="site-header" role="banner">
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <span class="badge">GOV</span>
+          <span class="muted" style="color:rgba(255,255,255,.85)">便民服務・資訊快速查詢</span>
+        </div>
+        <div class="topbar__right">
+          <button class="linklike" type="button" data-action="toggle-theme" aria-label="切換深色模式">🌓</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="navwrap">
+      <div class="container navwrap__inner">
+        <a class="brand" href="index.html" aria-label="回到首頁">
+          <div class="brand__mark">
+            <img src="assets/img/flag-roc.svg" alt="中華民國國旗" class="brand__flag" />
+            <img src="assets/img/emblem.svg" alt="政府識別（示意）" class="brand__logo" />
+          </div>
+          <div class="brand__text">
+            <div class="brand__title">中華名國國民政府</div>
+            <div class="brand__subtitle">官方資訊網</div>
+          </div>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-action="toggle-nav">
+          ☰ <span class="sr-only">開啟導覽</span>
+        </button>
+
+        <nav id="primary-nav" class="nav" role="navigation" aria-label="主要導覽">
+          <a href="about.html">政府介紹</a>
+          <a href="news.html">新聞公告</a>
+          <a href="policies.html">政策與法規</a>
+          <a href="regions.html" aria-current="page">兩地區服務</a>
+          <a href="faq.html">常見問答</a>
+          <a href="contact.html" class="nav__cta">聯絡與陳情</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">首頁</a><span>›</span><span>兩地區服務</span>
+        </div>
+
+        <h1>兩地區服務</h1>
+        <p class="muted">本頁提供台灣地區（台北）與大陸地區（南京）之服務入口摘要與分類索引。</p>
+
+        <div class="section-head" style="margin-top:14px">
+          <h2>地區切換（示範）</h2>
+          <div class="tabs" role="tablist" aria-label="地區切換">
+            <button class="tab" role="tab" aria-selected="true" data-action="region" data-region="tw">台灣地區</button>
+            <button class="tab" role="tab" aria-selected="false" data-action="region" data-region="ml">大陸地區</button>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-bottom:12px">
+          <div class="panel__row">
+            <div>
+              <strong id="regionName">—</strong>
+              <div class="help muted">此區塊會依地區切換（與首頁一致）</div>
+            </div>
+            <div id="regionChips"></div>
+          </div>
+        </div>
+
+        <div class="grid-4" id="servicesGrid"></div>
+
+        <div class="section-head" style="margin-top:22px">
+          <h2>服務分類索引</h2>
+        </div>
+
+        <div class="grid-3">
+          <div class="card" id="service-civil">
+            <h3>戶政／證件</h3>
+            <p class="muted">戶籍、出生、遷徙、證明文件（示範）。</p>
+          </div>
+          <div class="card" id="service-tax">
+            <h3>稅務與繳費</h3>
+            <p class="muted">報稅、繳費、查詢與常用表單（示範）。</p>
+          </div>
+          <div class="card" id="service-welfare">
+            <h3>健康與社福</h3>
+            <p class="muted">健保、補助、福利與救助（示範）。</p>
+          </div>
+          <div class="card" id="service-edu">
+            <h3>教育</h3>
+            <p class="muted">學籍、升學資訊、學費補助（示範）。</p>
+          </div>
+          <div class="card" id="service-transport">
+            <h3>交通與車駕</h3>
+            <p class="muted">駕照、車籍、違規查詢（示範）。</p>
+          </div>
+          <div class="card" id="service-labor">
+            <h3>就業與勞動</h3>
+            <p class="muted">求職、職訓、勞保、勞資申訴（示範）。</p>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin-top:22px">
+          <h2>大陸地區分類補充（示範）</h2>
+        </div>
+
+        <div class="grid-3">
+          <div class="card" id="ml-admin">
+            <h3>行政服務</h3>
+            <p class="muted">證件、遷徙、基礎申辦與窗口資訊（示範）。</p>
+          </div>
+          <div class="card" id="ml-jobs">
+            <h3>就業安置</h3>
+            <p class="muted">職訓、媒合、保障與申訴（示範）。</p>
+          </div>
+          <div class="card" id="ml-livelihood">
+            <h3>民生修復</h3>
+            <p class="muted">供應公告、公共服務與生活資訊（示範）。</p>
+          </div>
+          <div class="card" id="ml-edu">
+            <h3>教育安置</h3>
+            <p class="muted">學籍銜接、就學支持、資源整合（示範）。</p>
+          </div>
+          <div class="card" id="ml-welfare">
+            <h3>社福救助</h3>
+            <p class="muted">補助、救助、轉介與服務資源（示範）。</p>
+          </div>
+          <div class="card" id="ml-local">
+            <h3>地方治理窗口</h3>
+            <p class="muted">市縣服務窗口試行名單與協作機制（示範）。</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__title">中華名國國民政府官方資訊網</div>
+        <p class="muted">本網站為架空世界觀之靜態示範站，內容可依創作需求調整。</p>
+      </div>
+      <div class="footer__links">
+        <a href="about.html">政府介紹</a>
+        <a href="news.html">新聞公告</a>
+        <a href="policies.html">政策與法規</a>
+        <a href="contact.html">聯絡</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> GOV Portal</span>
+      <span class="muted">v1.0</span>
+    </div>
+  </footer>
+</body>
+</html>
