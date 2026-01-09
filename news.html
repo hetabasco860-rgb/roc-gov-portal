@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>新聞公告｜中華名國國民政府官方資訊網</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <header class="site-header" role="banner">
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <span class="badge">GOV</span>
+          <span class="muted" style="color:rgba(255,255,255,.85)">便民服務・資訊快速查詢</span>
+        </div>
+        <div class="topbar__right">
+          <button class="linklike" type="button" data-action="toggle-theme" aria-label="切換深色模式">🌓</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="navwrap">
+      <div class="container navwrap__inner">
+        <a class="brand" href="index.html" aria-label="回到首頁">
+          <div class="brand__mark">
+            <img src="assets/img/flag-roc.svg" alt="中華民國國旗" class="brand__flag" />
+            <img src="assets/img/emblem.svg" alt="政府識別（示意）" class="brand__logo" />
+          </div>
+          <div class="brand__text">
+            <div class="brand__title">中華名國國民政府</div>
+            <div class="brand__subtitle">官方資訊網</div>
+          </div>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-action="toggle-nav">
+          ☰ <span class="sr-only">開啟導覽</span>
+        </button>
+
+        <nav id="primary-nav" class="nav" role="navigation" aria-label="主要導覽">
+          <a href="about.html">政府介紹</a>
+          <a href="news.html" aria-current="page">新聞公告</a>
+          <a href="policies.html">政策與法規</a>
+          <a href="regions.html">兩地區服務</a>
+          <a href="faq.html">常見問答</a>
+          <a href="contact.html" class="nav__cta">聯絡與陳情</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">首頁</a><span>›</span><span>新聞公告</span>
+        </div>
+
+        <h1>新聞公告</h1>
+        <p class="muted">本頁支援搜尋與快速篩選（純前端示範）。</p>
+
+        <div class="panel panel--soft">
+          <div class="panel__row">
+            <div>
+              <strong>快速查詢</strong>
+              <div class="help muted" id="newsHint">提示：可使用上方搜尋快速查找公告與服務</div>
+            </div>
+            <span class="pill">公告 / 專區</span>
+          </div>
+
+          <div class="search" role="search" aria-label="站內搜尋">
+            <label class="sr-only" for="q">站內搜尋</label>
+            <input id="q" name="q" type="search" placeholder="例如：身分銜接、政治過渡、港澳瓊、安全提醒…" />
+            <button type="button" class="btn btn--primary" data-action="search">搜尋</button>
+          </div>
+
+          <div class="tabs" aria-label="快速篩選（示範）">
+            <a class="tab" href="news.html?filter=transition#transition" role="button">政治過渡</a>
+            <a class="tab" href="news.html?filter=identity#identity" role="button">身分銜接</a>
+            <a class="tab" href="news.html?filter=alert" role="button">安全提醒</a>
+            <a class="tab" href="news.html" role="button">清除篩選</a>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin-top:18px">
+          <h2 id="transition">政治過渡公告專區</h2>
+          <a class="btn" href="policies.html#transition-policy">相關政策指引 →</a>
+        </div>
+        <div class="card">
+          <p class="muted">彙整制度轉換、會議結論、法案進度與重大公告。下方列表可用搜尋或篩選。</p>
+        </div>
+
+        <div class="section-head" style="margin-top:18px">
+          <h2 id="identity">身分銜接公告</h2>
+          <a class="btn" href="policies.html#identity-bridge">前往申辦指引 →</a>
+        </div>
+
+        <div id="newsList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__title">中華名國國民政府官方資訊網</div>
+        <p class="muted">本網站為架空世界觀之靜態示範站，內容可依創作需求調整。</p>
+      </div>
+      <div class="footer__links">
+        <a href="about.html">政府介紹</a>
+        <a href="news.html">新聞公告</a>
+        <a href="policies.html">政策與法規</a>
+        <a href="contact.html">聯絡</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> GOV Portal</span>
+      <span class="muted">v1.0</span>
+    </div>
+  </footer>
+</body>
+</html>
